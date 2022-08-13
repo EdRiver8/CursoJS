@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js"></script>
+    <title>Document</title>
+    <style>
+      body {
+        background-color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="boton">Clickeame!</button>
+    <div id="resultado"></div>
+    <p>Un parrafo cualquiera</p>
+    <p id="2parrafo">Un segundo parrafo cualquiera</p>
+    <p id="otroP"></p>
+    <!-- tambien se puede usar las funciones con un atributo de la etiqueta llamada
+    "onclick" -->
+    <!-- <div id="resultado" onclick="activarBoton()"></div> -->
+
+    <form action="">
+      <input type="text" id="texto" name="texto" />
+    </form>
+    <p id="textoCopia" style="color: blue"></p>
+    <script>
+      /* 
+        existen varias maneras de comunicarnos con el DOM, console.log es uno de ellos, window.alert(), estos ya los hemos manejado
+        pero hay otros como innerHTML y document.write, para sacar informacion a la web, la diferencia entre estos ultimos
+        es que document crea contenido nuevo e inner altera el contenido ya existente en la pagina 
+        <p id = "2parrafo">____________</p>, podriamos usar innerHTML para escribir directamente en la etiqueta parrafo por medio de su id
+      */
+
+      document.getElementById("2parrafo").innerHTML =
+        "Alterando el segundo parrafo cualquiera";
+      //ahora usamos document.write, como es algo nuevo y no vamos a alterar algo que ya tenemos como la etiqueta p, solo agregamos
+      //document.write("Hola Mundo por chorrocienta mil vez!!!");
+
+      //leemos las variables con las cuales se van a generar los eventos (interaccion de la pagina)
+      let boton = document.getElementById("boton");
+      let resultado = document.getElementById("resultado");
+      //boton.addEventListener("click", activarBoton);
+      let cont = 0;
+      //uso de funcion clasica, me permite usarla antes de ser creada
+      function activarBoton() {
+        resultado.innerHTML += `<p>Click ${cont++}!!!</p>`; //+= para que concatene con lo que se tiene en ese lugar del dom
+      }
+
+      //usar funcion flecha (anonima), para realizar lo mismo, se debe crear primero la funcion antes de ser invocada
+      const activarBoton2 = () =>
+        (resultado.innerHTML += `<p>Click ${++cont}!!!</p>`);
+
+      boton.addEventListener("click", activarBoton2);
+
+      var texto = document.getElementById("texto");
+      texto.onkeyup = function () {
+        document.getElementById("textoCopia").innerHTML = texto.value;
+      };
+    </script>
+  </body>
+</html>

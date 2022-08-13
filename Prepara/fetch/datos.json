@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "nombre": "Ron Damon",
+    "email": "pagamelarenta@email.co",
+    "estado": false
+  },
+  {
+    "id": 2,
+    "nombre": "Goku",
+    "email": "entucaravegeta@email.co",
+    "estado": false
+  },
+  {
+    "id": 3,
+    "nombre": "Script",
+    "email": "json@email.co",
+    "estado": true
+  },
+  {
+    "id": 4,
+    "nombre": "Zakuragi",
+    "email": "pelirojo@email.co",
+    "estado": true
+  }
+]

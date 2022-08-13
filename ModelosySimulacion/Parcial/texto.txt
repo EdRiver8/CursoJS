@@ -1,0 +1,35 @@
+Isaza Company es una empresa de desarrollo de software que presta servicio de Outsourcing en 3 clientes (AZ, BY & CW) cada una de ellas tienen lenguajes de programación distintos (Java, Scala, Python respectivamente).
+Cada empresa solicita cierta cantidad de nuevo personal experto a Isaza Company cada mes según la siguiente probabilidad.
+
+Solicitud personal
+EMPRESA AZ
+                0       1       2
+Probabilidad    0,1     0,6     0,3
+
+Solicitud personal
+EMPRESA BY
+                0        1       2
+Probabilidad    0,4     0,2     0,4
+
+Solicitud personal
+EMPRESA CW
+                0       1       2       3       4
+Probabilidad    0,15    0,3     0,4     0,1     0,05
+
+El equipo de gestión humana ve un reto importante ya que en el mercado no encuentra expertos en más de uno de los lenguajes de programación que solicitan los clientes, tanto asi que la probabilidad de que un nuevo contratado sea experto en Java es 0,25 de Scala 0,3 y de Python el restante.
+Por esta razón le piden a usted determinar la cantidad de personas a contratar mensualmente para maximizar la utilidad de la empresa, por otra parte, le piden calcular el promedio mensual de cumplimiento mensual de las solicitudes realizadas por los clientes.
+Teniente en cuenta que:
+     Pago de una empresa por un experto mensual es de: $5000 USD
+     Costo de un experto mensual Java $ 2100 USD
+     Costo de un experto mensual Scala $ 1800 USD
+     Costo de un experto mensual Python $ 1900 USD
+     Un experto de un lenguaje no puede ser enviado al otro cliente.  En caso tal de que se contrate a alguien y no pueda ser asignado la empresa sufre el costo mensual
+    según sus expertos y esta persona se retira de la compañía dado que no hay certeza de que vaya a ser asignado.  Nota simular: 20 años
+
+a) (10%) Realizar un pseudocódigo que represente las condiciones del enunciado, especificar mediante
+comentarios los pasos.
+b) (20%) Determinar la cantidad de personas a contratar mensualmente para maximizar utilidad
+c) (10%) Determine el porcentaje de cumplimiento promedio mensual de las solicitudes por cada empresa y total.
+d) (10%) Según los resultados obtenidos, a Rio Company le ofrecen un proceso de capacitación previo a la
+contratación en el cual un desarrollador puede programar en los 3 lenguajes de programación por costo ($2000
+USD por desarrollador). Recomendaría tomar esta capacitación ¿si, no y por qué?

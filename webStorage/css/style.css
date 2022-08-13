@@ -1,0 +1,37 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#contenido{
+	box-shadow: 0px 1px 1px 2px grey;
+	padding: 20px;
+	width: 50%;
+	margin: auto;
+}
+#datos{
+	padding: 20px;
+	width: 50%;
+	margin: auto;
+	border: 1px solid grey;	
+}
+#enviar{
+	background: black;
+	color: white;
+	width: 100%;
+	border-color: black;
+	padding: 4px;
+}
+#borrar{
+	background: red;
+	color: white;
+	width: 100%;
+	border-color: red;
+	padding: 4px;
+}
+#group{
+	width: 100%;
+}
+input{
+	width: 100%;
+	margin-bottom: 3px;
+}

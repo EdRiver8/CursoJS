@@ -1,0 +1,21 @@
+/* css esta compuesto por:
+    selector de elementos =>
+        Clave: Valor;
+        Atributo: Valor;
+        Propiedad: Valor;
+*/
+body {
+  height: 100vh; /* vh = view * height, 100 = toda el area pag*/
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to top left, #0ceea3, #0c50ee);
+}
+h1 {
+  font-family: sans-serif;
+  font-size: 4rem;
+  line-height: 1.5;
+  width: 100%;
+  padding: 2.5rem;
+  text-align: center;
+  color: #ffff;
+}

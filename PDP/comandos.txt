@@ -1,0 +1,2 @@
+1. Comando para crear un proyecto con react: npx create-react-app + nombre del proyecto 'reactcore' => debe mostrar 'Happy hacking!' al finalizar la instalacion
+2. npm start 'para lanzar la aplicacion por el puerto por defecto 3000, se debe estar en la ruta de la carpeta que contiene el proyecto => 2.1reactcore'
